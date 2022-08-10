@@ -1,5 +1,790 @@
 
 # cargo-vet imports lock
 
-[audits]
+[[audits.embark.audits.anyhow]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "1.0.58"
+
+[[audits.embark.audits.ark-api]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.15.1"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.ark-api-ffi]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.15.1"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.ark-api-macros]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.10.0"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.ark-module]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.15.1"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.cervo]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.cervo-asset]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.cervo-core]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.cervo-nnef]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.cervo-onnx]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.cty]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.2"
+notes = "Inspected it and is a tiny crate with just type definitions"
+
+[[audits.embark.audits.egui-ark]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.36.0"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.macaw]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.17.0"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.natord]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "1.0.9"
+notes = "Inspected and it is a tiny crate with no unsafe or system interactions, just string comparisons"
+
+[[audits.embark.audits.perchance]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.3.1"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.pollster]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.2.5"
+notes = "Inspected it and it is a minimal crate for blocking on futures and does nothing else"
+
+[[audits.embark.audits.puffin]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.13.3"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.puffin]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.17.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.puffin-imgui]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.17.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.sadness-generator]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.4.1"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.saft]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.30.0"
+notes = "Maintained by the Ark team at Embark"
+
+[[audits.embark.audits.serial_test]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-run"
+version = "0.6.0"
+
+[[audits.embark.audits.serial_test_derive]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-run"
+version = "0.6.0"
+
+[[audits.embark.audits.spirv-std]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.4.0-alpha.12"
+notes = "Maintained by the rust-gpu team at Embark"
+
+[[audits.embark.audits.spirv-std-macros]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.4.0-alpha.12"
+notes = "Maintained by the rust-gpu team at Embark"
+
+[[audits.embark.audits.spirv-types]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.4.0-alpha.12"
+notes = "Maintained by the rust-gpu team at Embark"
+
+[[audits.embark.audits.superluminal-perf]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "I created and maintain this crate with Embark. It has been stable for 2 years, is for Windows only, and is a thin safe layer over FFI"
+
+[[audits.embark.audits.superluminal-perf-sys]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+notes = "I created and maintain this crate with Embark. It has been stable for 2 years, It is for Windows only and is an FFI layer over a pre-built static library provided by Superluminal.io"
+
+[[audits.embark.audits.tiny-bench]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.1.0"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.tiny-bench]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "Maintained by Embark"
+
+[[audits.embark.audits.tinyvec_macros]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.1.0"
+notes = "Inspected it and is a tiny crate with single safe macro"
+
+[[audits.embark.audits.uname]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "Inspected it and is tiny crate wrapping libc function with some unsafe usage for string handling"
+
+[[audits.embark.audits.webpki-roots]]
+who = "Johan Andersson <johan@embark-studios.com>"
+criteria = "safe-to-deploy"
+version = "0.22.4"
+notes = "Inspected it to confirm that it only contains data definitions and no runtime code"
+
+[[audits.firefox.audits.android_logger]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.11.0"
+notes = "Small crate, wrapping Android log functionality, reviewed by janerik"
+
+[[audits.firefox.audits.android_logger]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "0.11.0 -> 0.11.1"
+notes = "Small crate, wrapping Android log functionality, now switched to properly using MaybeUninit"
+
+[[audits.firefox.audits.android_system_properties]]
+who = "Nicolas Silva <nical@fastmail.com>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+notes = "I wrote this crate, reviewed by jimb. It is mostly a Rust port of some C++ code we already ship."
+
+[[audits.firefox.audits.app_units]]
+who = "Emilio Cobos Álvarez <emilio@crisal.io>"
+criteria = "safe-to-deploy"
+version = "0.7.1"
+notes = """
+I'm pretty familiar with this crate. It provides a fixed-point numeric type.
+The code is pretty straight-forward, there's no unsafe code at all.
+"""
+
+[[audits.firefox.audits.arbitrary]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-run"
+delta = "1.1.0 -> 1.1.1"
+
+[[audits.firefox.audits.ashmem]]
+who = "Matthew Gregan <kinetik@flim.org>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+notes = """
+Small unsafe wrapper around Android 8.0's ASharedMemory native API that falls
+back to older private ioctl-based API at runtime on earlier OS releases.  The
+shim code is small and doesn't inspect the API arguments, so is unlikely to
+expose any safety issues beyond those presented by the native OS API.
+"""
+
+[[audits.firefox.audits.atomic_refcell]]
+who = "Bobby Holley <bholley@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.1.8"
+notes = "I maintain this crate and have reviewed every line."
+
+[[audits.firefox.audits.bindgen]]
+who = "Emilio Cobos Álvarez <emilio@crisal.io>"
+criteria = "safe-to-deploy"
+version = "0.59.2"
+notes = "I'm the primary author and maintainer of the crate."
+
+[[audits.firefox.audits.bit-set]]
+who = "Aria Beingessner <a.beingessner@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.5.2"
+notes = "Another crate I own via contain-rs that is ancient and maintenance mode, no known issues."
+
+[[audits.firefox.audits.bit-vec]]
+who = "Aria Beingessner <a.beingessner@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.6.3"
+notes = "Another crate I own via contain-rs that is ancient and in maintenance mode but otherwise perfectly fine."
+
+[[audits.firefox.audits.build-parallel]]
+who = "Jeff Muizelaar <jmuizelaar@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+
+[[audits.firefox.audits.clap_lex]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "0.2.0 -> 0.2.2"
+
+[[audits.firefox.audits.cstr]]
+who = "Emilio Cobos Álvarez <emilio@crisal.io>"
+criteria = "safe-to-deploy"
+version = "0.2.10"
+notes = """
+I've reviewed the code of the crate thoroughly. It generates an unsafe block
+which is statically guaranteed to be safe. Inputs to the macro have to be
+static so there's no uncontrolled input whatsoever.
+"""
+
+[[audits.firefox.audits.derive_arbitrary]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-run"
+delta = "1.1.0 -> 1.1.1"
+
+[[audits.firefox.audits.dogear]]
+who = "Sammy Khamis <skhamis@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "0.4.0 -> 0.5.0"
+notes = "The repository for this crate belongs in the Mozilla org."
+
+[[audits.firefox.audits.extend]]
+who = "Ben Dean-Kawamura <bdk@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "1.1.2"
+notes = "Inspected the crate and noted that the impl block comes directly from the proc-macro input.  If no new code can be added by this crate, I don't think there can be any issues."
+
+[[audits.firefox.audits.flagset]]
+who = "Ryan Hunt <rhunt@eqrion.net>"
+criteria = "safe-to-deploy"
+version = "0.4.3"
+notes = "Uses no ambient capabilities, vetted the one instance of unsafe."
+
+[[audits.firefox.audits.fluent]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.16.0"
+
+[[audits.firefox.audits.fluent-bundle]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.15.2"
+
+[[audits.firefox.audits.fluent-fallback]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.6.0"
+
+[[audits.firefox.audits.fluent-langneg]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.13.0"
+
+[[audits.firefox.audits.fluent-pseudo]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.3.1"
+
+[[audits.firefox.audits.fluent-syntax]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.11.0"
+
+[[audits.firefox.audits.fluent-testing]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-run"
+version = "0.0.2"
+
+[[audits.firefox.audits.getrandom]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "0.2.6 -> 0.2.7"
+
+[[audits.firefox.audits.glean]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "50.1.0"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "50.1.2"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "51.1.0"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "50.1.2 -> 50.1.3"
+notes = "Unchanged from last version"
+
+[[audits.firefox.audits.glean]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "50.1.3 -> 51.0.1"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean-core]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "50.1.0"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean-core]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "50.1.2"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean-core]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "51.1.0"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.glean-core]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "50.1.2 -> 50.1.3"
+notes = "Bug fix release with minimal changes, changes done by myself"
+
+[[audits.firefox.audits.glean-core]]
+who = "Jan-Erik Rediger <jrediger@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "50.1.3 -> 51.0.1"
+notes = "Maintained by the Glean team at Mozilla"
+
+[[audits.firefox.audits.intl-memoizer]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.5.1"
+
+[[audits.firefox.audits.intl_pluralrules]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "7.0.1"
+
+[[audits.firefox.audits.linked-hash-map]]
+who = "Aria Beingessner <a.beingessner@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.5.4"
+notes = "I own this crate (I am contain-rs) and 0.5.4 passes miri. This code is very old and used by lots of people, so I'm pretty confident in it, even though it's in maintenance-mode and missing some nice-to-have APIs."
+
+[[audits.firefox.audits.log]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+version = "0.4.17"
+
+[[audits.firefox.audits.malloc_size_of_derive]]
+who = "Bobby Holley <bobbyholley@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+notes = """
+This was originally servo code which I put on crates.io some years ago but didn't
+examine at the time, so I examined it now. I didn't perform a full logic review
+but convinced myself that any generated code will be entirely safe to deploy.
+"""
+
+[[audits.firefox.audits.matches]]
+who = "Bobby Holley <bobbyholley@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.1.9"
+notes = "This is a trivial crate."
+
+[[audits.firefox.audits.naga]]
+who = "Dzmitry Malyshau <kvark@fastmail.com>"
+criteria = "safe-to-deploy"
+version = "0.8.0"
+notes = """
+This crate, up through the indicated version, was written or reviewed
+by Dzmitry Malyshau while he was a Mozilla employee. Dzmitry left
+Mozilla at the beginning of February 2022. This audit statement was
+collected by Jim Blandy, a Mozilla employee, over email in July 2022:
+Dzmitry was shown, and agreed to, the 'safe-to-deploy' text.
+"""
+
+[[audits.firefox.audits.new_debug_unreachable]]
+who = "Bobby Holley <bobbyholley@gmail.com>"
+criteria = "safe-to-deploy"
+version = "1.0.4"
+notes = "This is a trivial crate."
+
+[[audits.firefox.audits.origin-trial-token]]
+who = "Emilio Cobos Álvarez <emilio@crisal.io>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = """
+I'm the author of the crate. The only unsafe code is a view over a byte array
+which is properly validated.
+
+Cryptography shenanigans are delegated to the caller so there's no possible
+unsoundness there.
+"""
+
+[[audits.firefox.audits.precomputed-hash]]
+who = "Bobby Holley <bobbyholley@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "This is a trivial crate."
+
+[[audits.firefox.audits.rust_decimal]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "1.24.0 -> 1.25.0"
+
+[[audits.firefox.audits.semver]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "1.0.9 -> 1.0.10"
+
+[[audits.firefox.audits.thin-vec]]
+who = "Aria Beingessner <a.beingessner@gmail.com>"
+criteria = "safe-to-deploy"
+version = "0.2.5"
+notes = "I own this crate, and most of its versions were codeveloped and reviewed by Nika Layzell. This version was not explicitly reviewed by her, but it was specifically a release that made the code pass miri and was reviewed by me. Firefox uses it in the gecko-ffi configuration which is less thoroughly tested and more dangerous but we're reasonably confident in it. The real danger is from C++ code failing to use it correctly in FFI but that's just how FFI is."
+
+[[audits.firefox.audits.tinystr]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.3.4"
+
+[[audits.firefox.audits.tinystr]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.6.0"
+
+[[audits.firefox.audits.tracy-rs]]
+who = "Glenn Watson <git@intuitionlibrary.com>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+
+[[audits.firefox.audits.uluru]]
+who = "Emilio Cobos Álvarez <emilio@crisal.io>"
+criteria = "safe-to-deploy"
+version = "3.0.0"
+notes = """
+I've reviewed multiple patches in this crate, including the initial
+implementation back in the day. It has no unsafe code at all nowadays.
+"""
+
+[[audits.firefox.audits.unic-langid]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.9.0"
+
+[[audits.firefox.audits.unic-langid-impl]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.9.0"
+
+[[audits.firefox.audits.unic-langid-macros]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.9.0"
+
+[[audits.firefox.audits.unic-langid-macros-impl]]
+who = "Zibi Braniecki <zibi@unicode.org>"
+criteria = "safe-to-deploy"
+version = "0.9.0"
+
+[[audits.firefox.audits.unicode-ident]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "1.0.0 -> 1.0.1"
+
+[[audits.firefox.audits.unicode-normalization]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "0.1.19 -> 0.1.20"
+notes = "I am the author of most of these changes upstream, and prepared the release myself, at which point I looked at the other changes since 0.1.19."
+
+[[audits.firefox.audits.uniffi]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.19.3"
+notes = "Maintained by the Glean and Application Services teams"
+
+[[audits.firefox.audits.uniffi_bindgen]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.19.3"
+notes = "Maintained by the Glean and Application Services teams."
+
+[[audits.firefox.audits.uniffi_build]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.19.3"
+notes = "Maintained by the Glean and Application Services teams."
+
+[[audits.firefox.audits.uniffi_macros]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "0.19.3"
+notes = "Maintained by the Glean and Application Services teams."
+
+[[audits.firefox.audits.void]]
+who = "Bobby Holley <bobbyholley@gmail.com>"
+criteria = "safe-to-deploy"
+version = "1.0.2"
+notes = "Very small crate, just hosts the Void type for easier cross-crate interfacing."
+
+[[audits.firefox.audits.wasm-encoder]]
+who = "Ryan Hunt <rhunt@eqrion.net>"
+criteria = "safe-to-deploy"
+version = "0.7.0"
+notes = "Maintained by the Bytecode Alliance, with contributions from Mozilla. This has no unsafe code and uses no ambient capabilities."
+
+[[audits.firefox.audits.wasm-encoder]]
+who = "Ryan Hunt <rhunt@eqrion.net>"
+criteria = "safe-to-deploy"
+delta = "0.7.0 -> 0.14.0"
+notes = "wasm-encoder has no unsafe code and uses no ambient capabilities."
+
+[[audits.firefox.audits.wasm-smith]]
+who = "Ryan Hunt <rhunt@eqrion.net>"
+criteria = "safe-to-deploy"
+version = "0.11.2"
+notes = "Maintained by the Bytecode Alliance, with contributions from Mozilla. I've vetted the one instance of unsafe code."
+
+[[audits.firefox.audits.wasmparser]]
+who = "Ryan Hunt <rhunt@eqrion.net>"
+criteria = "safe-to-deploy"
+version = "0.87.0"
+notes = "Maintained by the Bytecode Alliance, with contributions from Mozilla. I've vetted the one instance of unsafe code."
+
+[[audits.firefox.audits.wast]]
+who = "Ryan Hunt <rhunt@eqrion.net>"
+criteria = "safe-to-deploy"
+version = "44.0.0"
+notes = "Maintained by the Bytecode Alliance, with contributions from Mozilla. wast has no unsafe code and the only ambient capability it uses is to read the full contents of a file that is given to it."
+
+[[audits.firefox.audits.webdriver]]
+who = "Henrik Skupin <mail@hskupin.info>"
+criteria = "safe-to-deploy"
+version = "0.46.0"
+notes = "Maintained by the DevTools team at Mozilla and has no unsafe code."
+
+[[audits.firefox.audits.weedle2]]
+who = "Travis Long <tlong@mozilla.com>"
+criteria = "safe-to-deploy"
+version = "3.0.0"
+notes = "Maintained by the Glean and Application Services teams."
+
+[[audits.firefox.audits.wgpu-core]]
+who = "Dzmitry Malyshau <kvark@fastmail.com>"
+criteria = "safe-to-deploy"
+version = "0.12.0"
+notes = """
+This crate, up through the indicated version, was written or reviewed
+by Dzmitry Malyshau while he was a Mozilla employee. Dzmitry left
+Mozilla at the beginning of February 2022. This audit statement was
+collected by Jim Blandy, a Mozilla employee, over email in July 2022:
+Dzmitry was shown, and agreed to, the 'safe-to-deploy' text.
+"""
+
+[[audits.firefox.audits.wgpu-hal]]
+who = "Dzmitry Malyshau <kvark@fastmail.com>"
+criteria = "safe-to-deploy"
+version = "0.12.0"
+notes = """
+This crate, up through the indicated version, was written or reviewed
+by Dzmitry Malyshau while he was a Mozilla employee. Dzmitry left
+Mozilla at the beginning of February 2022. This audit statement was
+collected by Jim Blandy, a Mozilla employee, over email in July 2022:
+Dzmitry was shown, and agreed to, the 'safe-to-deploy' text.
+"""
+
+[[audits.firefox.audits.wgpu-types]]
+who = "Dzmitry Malyshau <kvark@fastmail.com>"
+criteria = "safe-to-deploy"
+version = "0.12.0"
+notes = """
+This crate, up through the indicated version, was written or reviewed
+by Dzmitry Malyshau while he was a Mozilla employee. Dzmitry left
+Mozilla at the beginning of February 2022. This audit statement was
+collected by Jim Blandy, a Mozilla employee, over email in July 2022:
+Dzmitry was shown, and agreed to, the 'safe-to-deploy' text.
+"""
+
+[[audits.wasmtime.audits.backtrace]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.3.66"
+notes = "I am the author of this crate."
+
+[[audits.wasmtime.audits.cc]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "1.0.73"
+notes = "I am the author of this crate."
+
+[[audits.wasmtime.audits.cfg-if]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "1.0.0"
+notes = "I am the author of this crate."
+
+[[audits.wasmtime.audits.libm]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+delta = "0.2.2 -> 0.2.4"
+notes = """
+This diff primarily fixes a few issues with the `fma`-related functions,
+but also contains some other minor fixes as well. Everything looks A-OK and
+as expected.
+"""
+
+[[audits.wasmtime.audits.regalloc2]]
+who = "Jamey Sharp <jsharp@fastly.com>"
+criteria = "safe-to-deploy"
+delta = "0.3.1 -> 0.3.2"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.rustc-demangle]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.1.21"
+notes = "I am the author of this crate."
+
+[[audits.wasmtime.audits.wasm-encoder]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.14.0"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasm-encoder]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.15.0"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasm-mutate]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.2.5"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasm-mutate]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.2.6"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasm-smith]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.11.2"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasm-smith]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.11.3"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasmparser]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.87.0"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasmparser]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.88.0"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasmprinter]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.2.37"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wasmprinter]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.2.38"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wast]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "35.0.2"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wast]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "44.0.0"
+notes = "The Bytecode Alliance is the author of this crate"
+
+[[audits.wasmtime.audits.wast]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "45.0.0"
+notes = "The Bytecode Alliance is the author of this crate"
+
+[[audits.wasmtime.audits.wat]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "1.0.46"
+notes = "The Bytecode Alliance is the author of this crate."
+
+[[audits.wasmtime.audits.wat]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "1.0.47"
+notes = "The Bytecode Alliance is the author of this crate."
 
